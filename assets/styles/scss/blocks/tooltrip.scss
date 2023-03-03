@@ -1,0 +1,16 @@
+#tooltip {
+    z-index: 9999;
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 110px;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px 5px 10px;
+    color: #DE9E15;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgb(54, 54, 54);
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-size: 20px;
+}

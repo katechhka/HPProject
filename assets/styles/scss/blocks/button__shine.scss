@@ -1,0 +1,22 @@
+.button__shine{
+    position: relative;
+    overflow: hidden;
+  }
+    .button__shine:hover{
+      box-shadow: 1px 1px 20px 7px
+      rgba(222, 158, 21, 0.4);
+      cursor:pointer;
+    }
+    .button__shine::before{
+      content:"";
+      position: absolute;
+      top:0;
+      left:-100%;
+      width:100%;
+      height:100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      transition: all 650ms;
+    }
+    .button__shine:hover::before{
+      left:100%;
+    }

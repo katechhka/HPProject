@@ -1,0 +1,137 @@
+.slick-track {
+    display: flex;
+    height: 20em;
+}
+
+.slider_spells .slick-track {
+    height: 6em;
+}
+
+.slick-list {
+    overflow: hidden;
+    margin: auto;
+
+}
+
+
+.slider {
+    position: relative;
+    padding: 0;
+    width: 70%;
+    margin: auto;
+
+}
+
+.slider_spells {
+
+    position: relative;
+    padding: 0;
+
+
+}
+
+
+.slick-arrow {
+    position: absolute;
+    top: 32%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+.slider_spells .slick-arrow {
+    position: absolute;
+    top: 19%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+}
+
+
+.slick-prev {
+    left: -8%;
+    background: url('../../images/mainpage/arrayRight.svg')0 0 /100% no-repeat;
+}
+
+.slider_spells .slick-prev {
+    left: -8%;
+
+}
+
+.slider_spells .slick-next {
+    right: -8%;
+}
+
+.slick-prev:hover {
+    background: url('../../images/mainpage/arrayBlueL.svg') no-repeat;
+}
+
+.slick-next {
+    right: -8%;
+    background: url('../../images/mainpage/arrayLeft.svg')0 0 /100% no-repeat;
+}
+
+.slick-next:hover {
+    background: url('../../images/mainpage/arrayBlueR.svg') no-repeat;
+}
+
+.slider__item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.slick-dots {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style: none; //убрать точки
+}
+
+
+
+.slick-dots li[class="slick-active"] button {
+    height: 12px;
+    width: 12px;
+
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    background-color: #1e346d8f;
+    padding: 0;
+    margin: 3px;
+}
+
+.slider_margin {
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.slider__itemSpell {
+    height: 4em;
+    margin: 0 1%;
+    padding: 0;
+    text-align: center;
+
+}
+
+.slider_spells p {
+    color: #172853;
+}

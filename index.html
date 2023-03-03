@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="./assets/scripts/modal.js"></script>
+    <script src="./assets/scripts/modal2.js"></script>
+    <title>Document</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <a href="./index.html"><img src="./assets/images/header/image 26.png" alt="logo"></a>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#mainpage" class="header__link">MAIN</a></li>
+                    <li><a href="#heroes" class="header__link">HEROES</a></li>
+                    <li><a href="#spells" class="header__link">SPELLS</a></li>
+                    <li><a href="#comments" class="header__link">COMMENTS</a></li>
+                </ul>
+            </nav>
+            <div class="header__avatar" id="avatar">
+                <img src="" id="img_avatar" alt="avatar">
+            </div>
+            <div class="header__login">
+                <a href="#" id="signUp">SIGN UP</a>
+            </div>
+        </div>
+    </header>
+    <!--Registration-->
+    <main class="main">
+
+        <div class="registrationForm" id="registrationForm">
+            <div class="registration_template">
+                <div class="registration_template_pic">
+                    <img class="registration_template_pic_Harry" src="./assets/images/login/authorisation.png">
+                </div>
+                <div class="registration_welcome">
+                    <p class="registration_welcome_text">Hi, <span class="nameColor">Stranger</span>!</p>
+                </div>
+
+                <form class="registration_template_fieldset form" id="regForm">
+
+                    <div class="loginBlock">
+                        <label for="userLogin" class="loginLabel">Login</label>
+                        <input type="text" id="userLogin" class="login form__item" required pattern="[a-zA-Z0-9]+$"
+                            minlength="5" />
+                    </div>
+                    <div class="emailBlock">
+                        <label for="userEmail" class="emailLabel" pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$">Email</label>
+                        <input type="email" id="userEmail" class="email form__item" required />
+                    </div>
+                    <div class="passwordBlock">
+                        <label for="userPassword" class="passwordLabel" pattern="^\d{1,}$">Password</label>
+                        <input type="password" id="userPassword1" class="password form__item" minlength="6"
+                            pattern="^\d{1,}$" required />
+                    </div>
+                    <div class="passwordBlock">
+                        <label for="userPassword" class="passwordLabel">Repeat password</label>
+                        <input type="password" id="userPassword2" class="password form__item" required />
+
+                    </div>
+                    <div class="heroBlock">
+                        <label for="selectHero" class="heroLabel">Avatar</label>
+                        <input type="text" id="selectHero" class="selectHero form__item"
+                            placeholder="link to the picture" />
+                    </div>
+
+                    <div class="pasInfo" id="pasInfo"></div>
+                    <div class="registration_Buttons">
+                        <button type="submit" class="button__shine signUpButton_registration" id="registration">SIGN
+                            UP</button>
+                        <button type="button" class="button__shine signUpButton_close" id="close">CLOSE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Kabinet-->
+        <form class="userForm" id="userForm">
+            <div class="welcome">
+                <img class="userFormPic" id="userFormPic">
+                <p id="welcomeUser"></p>
+            </div>
+
+            <div class="fieldset">
+                <div class="fieldsetItems">
+
+                    <div class="LKloginBlock">
+                        <label for="LKuserLogin" class="LKloginLabel">Login</label>
+                        <input type="text" id="LKuserLogin" class="LKlogin form__item" required pattern="[a-zA-Z0-9]+$"
+                            minlength="5" />
+                    </div>
+
+                    <div class="LKemailBlock">
+                        <label for="LKuserEmail" class="LKemailLabel">Email</label>
+                        <input type="email" id="LKuserEmail" class="LKemail" />
+                    </div>
+
+                    <div class="LKpasswordBlock">
+                        <label for="LKuserPassword" class="LKpasswordLabel">Password</label>
+                        <input type="text" id="LKuserPassword" class="LKpassword" minlength="6" />
+                    </div>
+
+                    <div class="LKavatarBlock">
+                        <label for="LKuserAvatar" class="LKuserAvatarLabel">Avatar</label>
+                        <input type="text" id="LKuserAvatar" class="LKuserAvatar" />
+                    </div>
+
+                    <div class="LKcommentBlock">
+                        <label for="LKuserComment" class="LKcommentLabel">About you</label>
+                        <input type="text" rows="3" id="LKuserComment" class="LKuserComment" />
+                    </div>
+
+                    <div class="LKForm_Buttons">
+                        <button type="submit" class="button__shine signUpButton" id="kabinet_save">Save</button>
+                        <button class="button__shine closeButton" id="kabinet_close">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+        <!--MainPage-->
+        <article class="mainpage" id="mainpage">
+            <div class="mainpage__container">
+                <div class="mainpage__container__logodiv"><img class="mainpage__container__logo"
+                        src="./assets/images/mainpage/logo.png" alt="логотип"></div>
+                <p class="mainpage__container__text1 text ">Hello! You got into Harry Potter Wiki!</p>
+                <p class="mainpage__container__text2 text">Here you can find information about your favorite heroes and
+                    spells of the Harry Potter universe</p>
+                <div class="mainpage__container2">
+                    <div class="mainpage__container__search">
+                        <input type="text" class="mainpage__container__input" placeholder="Name of character" id="hero">
+                    </div>
+                    <button class="mainpage__container__button button_fontsize button__shine"
+                        id="searchButton">Search</button>
+                </div>
+                <span id="res"></span>
+                <p class="mainpage__container__text3 text ">P.S Please enter the character's First and Last Name!
+                </p>
+
+            </div>
+        </article>
+        <!--Heroes Gallery-->
+        <div class="wrapper heroesBox" id="heroes">
+            <h2 class="title_size padding">MAIN HEROES</h2>
+            <div class="slider">
+                <div class="slider__item harry" data-tooltip="Harry Potter"><img
+                        src="./assets/images/mainpage/HarryPotter.png" class="imgHover" alt="Harry">
+                </div>
+                <div class="slider__item lord" data-tooltip="Lord Voldemort"><img
+                        src="./assets/images/mainpage/Voldemort.png" class="imgHover" alt="Lord">
+
+                </div>
+                <div class="slider__item hermione" data-tooltip="Hermione Granger"><img
+                        src="./assets/images/mainpage/HermioneGranger.png" class="imgHover" alt="Hermione">
+
+                </div>
+                <div class="slider__item ron" data-tooltip="Ron Weasley"><img
+                        src="./assets/images/mainpage/RonWeasley.png" class="imgHover" alt="Ron">
+
+                </div>
+                <div class="slider__item albus" data-tooltip="Albus Dumbledore"><img
+                        src="./assets/images/mainpage/AlbusDumbledore.png" class="imgHover" alt="Albus">
+                </div>
+
+                <div class="slider__item rubeus" data-tooltip="Rubeus Hagrid"><img
+                        src="./assets/images/mainpage/RubeusHagrid.png" class="imgHover" alt="Hagrid">
+                </div>
+                <div class="slider__item snape" data-tooltip="Severus Snape"><img
+                        src="./assets/images/mainpage/SeverusSnape.png" class="imgHover" alt="Snape">
+                </div>
+                <div class="slider__item draco" data-tooltip="Draco Malfoy"><img
+                        src="./assets/images/mainpage/DracoMalfoy.jpg" class="imgHover" alt="Malfoy">
+                </div>
+            </div>
+        </div>
+        <!--Всплывающие подсказки при наведении-->
+        <div id="tooltip"></div>
+
+        <!--Spells Gallery-->
+        <article class="spellsGallery" id="spells">
+            <h2 class="title_size padding">SPELLS</h2>
+            <div class="spellsGallery_wrapper wrapper ">
+                <div class="slider_spells slider_margin api_spells">
+
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Reducio</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Accio</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Crucio</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Protego</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Expecto patronum'</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell">
+                        <p class="galleryText_size apiSpells">Bombardo</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell">
+                        <p class="galleryText_size apiSpells">Avada Kedavra</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Imperio</p>
+                    </div>
+                    <div class="slider__item slider__itemSpell ">
+                        <p class="galleryText_size apiSpells">Confundo</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="spells__img"><img src="./assets/images/spells/orig.gif" alt="spells-animation"></div>
+        </article>
+
+        <!--Comments -->
+        <article class="comments" id="comments">
+            <div class="commentsBox">
+                <h2 class="title_size commentsBox__title">COMMENTS</h2>
+                <div class="comments__block">
+                    <div class="comments__form">
+                        <form class="comments__form-group">
+                            <div class="form-group"><input type="name" class="form-control form-name" id="comment-name"
+                                    placeholder="Your name:" required></div>
+                            <div class="form-group"><textarea type="name" class="form-control form-comment"
+                                    id="comment-body" placeholder="Comment:" required></textarea></div>
+                            <button type="submit" class="comments__button button__shine button_fontsize"
+                                id="comment-add">Add comment</button>
+                        </form>
+                    </div>
+                    <div class="comments__result" id="block">
+                        <div class="comments__result-block">
+                            <img src="./assets/images/mainpage/icon7.svg" alt="avatar" id="user-avatar">
+                            <p class="comments__name">Tanya</p>
+                            <p class="comments__content">Thx for the info about my fav heroes!</p>
+                            <p class="comments__time">10 Jan 2023</p>
+                        </div>
+                        <div class="comments__result-block">
+                            <img src="./assets/images/mainpage/user.png" alt="avatar" id="user-avatar">
+                            <p class="comments__name">Diana</p>
+                            <p class="comments__content">Totally in love with Harry!</p>
+                            <p class="comments__time">15 Jan 2023</p>
+                        </div>
+                        <div class="comments__result-block">
+                            <img src="https://cdn-icons-png.flaticon.com/512/195/195138.png" alt="avatar"
+                                id="user-avatar">
+                            <p class="comments__name">Sasha</p>
+                            <p class="comments__content">Wow! Spells! </p>
+                            <p class="comments__time">20 Jan 2023</p>
+                        </div>
+                        <div class="comments__result-item" id="comment-field"></div>
+                    </div>
+                </div>
+                <div class="btnFlex">
+                    <button class="comments__result-btn " id="btnEnd"></button>
+                    <button class="comments__result-btn " id="btnStart"></button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <!--Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col-l">
+                <div class="footer__logo">
+                    <a href=""><img src="./assets/images/footer/image 42.png" alt="HP-logo"></a>
+                </div>
+                <div class="footer__menu">
+                    <ul class="footer__list">
+                        <li><a href="#mainpage" class="footer__link">Main</a></li>
+                        <li><a href="#heroes" class="footer__link">Heroes</a></li>
+                        <li><a href="#spells" class="footer__link">Spells</a></li>
+                        <li><a href="#comments" class="footer__link">Comments</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a href="#"><img src="./assets/images/footer/image_41.png" id="insta" alt="inst"></a>
+                <a href="#"><img src="./assets/images/footer/image_40.png" id="whats" alt="whatsapp"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/jquery-3.6.3.js"></script>
+    <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/search.js"></script>
+    <script src="./assets/scripts/comments.js"></script>
+    <script src="./assets/scripts/commentsSlider.js"></script>
+    <script src="./assets/scripts/slaiderSpells.js"></script>
+    <script src="./assets/scripts/spells.js"></script>
+    <script src="./assets/scripts/scroll.js"></script>
+    <script src="./assets/scripts/registration.js"></script>
+    <script src="./assets/scripts/kabinet.js"></script>
+
+
+</html>

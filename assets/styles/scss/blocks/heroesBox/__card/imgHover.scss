@@ -1,0 +1,10 @@
+.imgHover:hover {
+    box-shadow: 1px 3px 7px 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+}
+
+.imgHover {
+    transition: 0.5s;
+    max-width: 14em;
+
+}

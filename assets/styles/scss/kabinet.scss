@@ -1,0 +1,168 @@
+.userForm {
+    display: none;
+    margin-left: 30vw;
+    position: absolute;
+    z-index: 10000;
+    padding-left: 3vw;
+    border: 5px solid white;
+    border-radius: 53px;
+    height: 120vh;
+    width: 35%;
+    background-image: url('../../images/card/bigfon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5vh;
+
+}
+
+.welcome {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#welcomeUser {
+    margin-left: 2.27vw;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5vw;
+    line-height: 100%;
+}
+
+.userFormPic {
+    width: 17%;
+}
+
+.fieldset {
+    width: 100%;
+    display: flex;
+    margin-top: 6.28vh;
+}
+
+.fieldsetItems {
+    width: 100%;
+    display: block;
+
+}
+
+
+
+.loginForm_welcome_text,
+.registration_welcome_text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.51vw;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.nameColor {
+    color: #DE9E15;
+}
+
+.LKemailBlock,
+.LKpasswordBlock,
+.LKloginBlock,
+.LKheroBlock,
+.LKavatarBlock,
+.LKcommentBlock {
+    display: grid;
+    justify-items: left;
+    margin-bottom: 1.99vh;
+    width: 80%;
+}
+
+.LKemail,
+.LKpassword,
+.LKlogin,
+.LKselectHero,
+.LKuserAvatar {
+
+    border-radius: 24px;
+    width: 100%;
+    height: 3em;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.21vw;
+    line-height: 3.68vh;
+    color: #FFFFFF;
+    padding-left: 2vw;
+    border: 3px solid white;
+    background-color: transparent;
+    ;
+}
+
+.LKuserComment {
+    border-radius: 24px;
+    width: 100%;
+    height: 5em;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.21vw;
+    line-height: 3.68vh;
+    color: #FFFFFF;
+    padding-left: 3.79vw;
+    border: 3px solid white;
+    background-color: transparent;
+    ;
+}
+
+.LKemailLabel,
+.LKpasswordLabel,
+.LKloginLabel,
+.LKheroLabel,
+.LKuserAvatarLabel,
+.LKcommentLabel {
+    color: #fff;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.27vw;
+    margin-bottom: 1.22vh;
+}
+
+
+.LKForm_Buttons {
+
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-family: "Roboto";
+}
+
+.closeButton,
+.signUpButton {
+    width: 40%;
+    height: 7vh;
+    border-radius: 24px;
+    padding: 0px;
+    margin-top: 6.28vh;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 1.57vw;
+}
+
+.signUpButton {
+    background-color: #DE9E15;
+    border-style: solid;
+    border: none;
+}
+
+.closeButton {
+    margin-left: 10%;
+    border-style: solid;
+    border: none;
+    background: rgba(222, 158, 21, 0.48);
+    ;
+}

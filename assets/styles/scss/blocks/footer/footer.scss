@@ -1,0 +1,38 @@
+.footer {
+    background-color: #EDEDED;
+}
+
+.footer__container {
+    display: flex;
+    padding: 1em 6vw 3em 6vw;
+}
+
+.footer__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.footer__link {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.footer__social a {
+    margin-right: 15px;
+}
+
+.footer__social a:last-child {
+    margin-right: 0;
+}
+
+.footer__col-l {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}

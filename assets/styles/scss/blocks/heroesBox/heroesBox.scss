@@ -1,0 +1,12 @@
+@import "./__btn/heroesBox__btn.scss";
+@import "./__card/heroesBox__card.scss";
+@import "./__title/heroesBox__title.scss";
+@import "./__card/imgHover.scss";
+
+.heroesBox {
+    height: 36em;
+    margin-top: 0;
+    box-sizing: border-box;
+    background-image: url('../../images/mainpage/фон.png');
+    padding-top: 5em;
+}

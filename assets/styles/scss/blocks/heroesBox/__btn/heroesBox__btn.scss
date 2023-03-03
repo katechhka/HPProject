@@ -1,0 +1,17 @@
+@import "./_left/heroesBox__btn_left.scss";
+@import "./_right/heroesBox__btn_right.scss";
+
+.heroesBox__btn {
+    height: 2.5em;
+    width: 2.5em;
+    margin-top: 8em;
+    border: none;
+    border-radius: 100%;
+    transition: 0.5s;
+
+}
+
+.heroesBox__btn:hover {
+
+    transform: scale(1.09);
+}

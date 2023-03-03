@@ -1,0 +1,23 @@
+.galleryText_size {
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+
+.galleryText_size:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    text-decoration: none;
+    color: #DE9E15;
+}

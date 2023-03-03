@@ -1,0 +1,8 @@
+.header__avatar {
+    display: none;
+    transition: 0.5s;
+}
+
+.header__avatar:hover {
+    scale: 1.1;
+}

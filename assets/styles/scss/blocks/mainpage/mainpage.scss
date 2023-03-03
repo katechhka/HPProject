@@ -1,0 +1,28 @@
+@import "./__container/mainpage__container.scss";
+@import "./__container/__button/mainpage__container__button.scss";
+@import "./__container/__input/mainpage__container__input.scss";
+@import "./__container/__search/mainpage__container__search.scss";
+@import "./__container/__text1/mainpage__container__text1.scss";
+@import "./__container/__text2/mainpage__container__text2.scss";
+@import "./__container/__text3/mainpage__container__text3.scss";
+
+.mainpage {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../images/mainpage/fon_mainpage.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+.mainpage_click {
+  filter: brightness(60%)
+}
+
+
+.text_click {
+  color: rgba(255, 255, 255, 0.179);
+
+}
